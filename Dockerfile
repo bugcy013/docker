@@ -53,6 +53,4 @@ RUN pip install --user bash_kernel
 RUN find . -name '*.ipynb' -exec ipython nbconvert --to notebook {} --output {} \;
 RUN find . -name '*.ipynb' -exec ipython trust {} \;
 
-ENV DOCKER_HOST unix://docker.sock
-
-CMD python orchestrate.py
+CMD ipython notebook
