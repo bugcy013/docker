@@ -2,7 +2,7 @@
 
 images: quantecon-image
 
-quantecon-image: quantecon-image
+quantecon-image:
 	docker build -t sanguineturtle/quantecon .
 
 upload: images
