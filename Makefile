@@ -1,8 +1,9 @@
 #-This has been modelled off of jupyter/docker-demo-images (https://github.com/jupyter/docker-demo-images.git)-#
 
-images: quantecon-image
+images: 
+	quantecon
 
-quantecon-image:
+quantecon:
 	docker build -t sanguineturtle/quantecon .
 
 upload: images
